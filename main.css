@@ -1,0 +1,169 @@
+body{
+    font-family: Helvetica, sans-serif;;
+    margin: 0;
+    background: whitesmoke;
+}
+
+
+
+nav{
+    z-index: 200;
+    position: fixed;
+    height: 5rem;
+    margin: 0 10% 0 10%;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;left: 0;right: 0;
+    border: solid grey;
+    border-width: 0 3px 3px 3px;
+}
+.NavBlock{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -90;
+    background: whitesmoke;
+    height: 5rem;
+    width: 100%;
+}
+nav a{
+    transition: .2s;
+    margin: 0 15px 0 15px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav a:hover, nav a:focus, nav a:focus-within{
+    text-shadow: 0 0 10px cyan;
+}
+nav img{
+    height: 5rem;
+    width: 5rem;
+    transition: 0.6s;
+}
+nav img:hover, nav a:focus-within img{
+    filter: drop-shadow(0 0 7px cyan);
+}
+
+
+
+.contact{
+    position: fixed;
+    bottom: calc(75% - 56px);
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: cyan;
+    border-radius: 15px 0 0 15px;
+    border: solid black;
+    border-width: 3px 0 3px 3px;
+}
+.contact a{
+    text-align: center;
+    font-weight: 1000;
+    font-size: 2rem;
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    color: dimgray;
+    text-decoration: none;   
+    transition: .2s;  
+}
+.contact a svg{
+    height: 40px;
+    width: 40px;
+}
+.contact a:hover, .contact a:focus, .contact a:focus-within svg{
+    color: white;
+}
+
+.socials{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    bottom: calc(75% - 171px);
+    right: 0;
+    width: 35px;
+    height: 112px;
+    background: white;
+    border-radius: 0 0 0 15px;
+    border: solid black;
+    border-width: 0 0 3px 3px;
+}
+.socials a{
+    text-align: center;
+    font-weight: 1000;
+    margin: 4px 0 4px 0;
+    height: 20px;
+    width: 20px;
+    color: dimgray;
+    text-decoration: none;    
+    transition: .2s;
+}
+.socials a:hover, .socials a:focus, .socials a:focus-within svg{
+    color: cyan;
+}
+
+
+
+main{
+    width: 86%;
+    margin: 7rem 7% 0 7%;
+}
+
+
+
+footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;left: 0;right: 0;
+    height: 3rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    border: solid grey;
+    border-width: 3px 0 0 0;
+}
+footer a{
+    transition: .2s;
+    margin: 0 15px 0 15px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+footer a:hover, footer a:focus, nav footer:focus-within{
+    text-shadow: 0 0 10px cyan;
+}
+footer img{
+    margin: 0 15px 0 15px;
+    height: 2rem;
+    width: 2rem;
+    transition: 0.4s;
+}
+footer img:hover{
+    filter: drop-shadow(0 0 10px cyan);
+    content: url("Images/CPLogo.png");
+    height: 2rem;
+    width: 2rem;
+}
+
+@media (prefers-reduced-motion: reduce){
+    *, *::before, *::after{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition-delay: 0ms !important;
+    }
+}

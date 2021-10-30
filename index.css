@@ -1,84 +1,5 @@
-body{
-    font-family: Helvetica, sans-serif;;
-    margin: 0;
-    background: whitesmoke;
-}
-
-
-
-nav{
-    z-index: 200;
-    position: fixed;
-    height: 5rem;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    /* border-radius: 0 0 20px 20px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;left: 0;right: 0;
-    border: solid grey;
-    border-width: 0 0 2px 0;
-}
-.NavBlock{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -90;
-    background: whitesmoke;
-    height: 5rem;
-    width: 100%;
-}
-nav a{
-    transition: .2s;
-    margin: 0 15px 0 15px;
-    color: black;
-    font-weight: 700;
-    text-decoration: none;
-}
-nav a:hover{
-    text-shadow: 0 0 10px cyan;
-}
-nav img{
-    height: 5rem;
-    width: 5rem;
-    transition: 0.6s;
-}
-nav img:hover{
-    filter: drop-shadow(0 0 7px cyan);
-}
-
-
-
-.contact{
-    position: fixed;
-    bottom: calc(75% - 56px);
-    right: 0;
-    width: 50px;
-    height: 50px;
-    background: lightgray;
-    border-radius: 15px 0 0 15px;
-    border: solid black;
-    border-width: 3px 0 3px 3px;
-}
-.socials{
-    position: fixed;
-    bottom: calc(75% - 109px);
-    right: 0;
-    width: 35px;
-    height: 50px;
-    background: lightgray;
-    border-radius: 0 0 0 15px;
-    border: solid black;
-    border-width: 0 0 3px 3px;
-}
-
-
-
 main{
     display: flex;
-    width: 86%;
-    margin: 7rem 7% 0 7%;
     justify-content:space-evenly;
     flex-wrap: wrap;
     align-items:center;
@@ -116,7 +37,7 @@ main .slogan .registerButton{
 main .slogan .registerButton a{
     text-decoration: none;
 }
-main .slogan .registerButton:hover{
+main .slogan .registerButton:hover, main .slogan .registerButton:focus-within{
     animation: registerWobble 0.3s linear forwards;
 }
 @keyframes registerWobble{
@@ -194,6 +115,7 @@ main .sloganImage{
     border-radius: 25px 25px 0 0;
     border: 3px solid black;
     border-width: 3px 3px 0 3px;
+    transition: box-shadow 0.5s;
     box-shadow: 0 10px 25px -10px #ff65c5;
     /*margin: 50px;*/
 }
@@ -262,43 +184,6 @@ main .sloganImage .sloganImageBorder #BoardLogo{
     z-index: 1;
     left: calc(4% - 10px);
     top: 65px;
-}
-
-
-
-footer{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;left: 0;right: 0;
-    height: 3rem;
-    width: 100%;
-    background: grey;
-    border: solid cyan;
-    border-width: 5px 0 0 0;
-}
-footer a{
-    transition: .2s;
-    margin: 0 15px 0 15px;
-    font-size: 0.9rem;
-    color: white;
-    text-decoration: none;    
-}
-footer a:hover{
-    text-shadow: 0 0 10px cyan;
-}
-footer img{
-    margin: 0 15px 0 15px;
-    height: 2rem;
-    width: 2rem;
-    transition: 0.4s;
-}
-footer img:hover{
-    filter: drop-shadow(0 0 10px cyan);
-    content: url("Images/CPLogo.png");
-    height: 2rem;
-    width: 2rem;
 }
 
 @media screen and (max-width: 500px){
