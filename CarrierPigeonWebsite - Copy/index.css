@@ -1,0 +1,103 @@
+main::before{
+    position: fixed;
+    word-break: break-all;
+    text-align: center;
+    filter: blur(2px);
+    content: "Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier Pigeon Carrier";
+    transform: rotate(-15deg);
+    font-size: 120px;
+    letter-spacing: -5px;
+    word-spacing: 15px;
+    z-index: -100;
+    top: -500px;
+    left: -100px;
+    width: 200%;
+    color: rgba(173, 216, 230, 0.3);
+}
+main div {
+  min-width: fit-content;
+}
+main .slogan #Slogan {
+  text-align: center;
+  font-size: max(2.5rem, 7vw);
+  margin: 10px;
+  font-weight:bolder;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    hsl(310, 70%, 50%) -10%,
+    hsl(325, 70%, 50%) 110%
+  );
+}
+@keyframes transparency {
+  0% {
+    color: black;
+  }
+
+  16%,
+  17% {
+    color: transparent;
+  }
+
+  33% {
+    color: black;
+  }
+}
+#create {
+  animation: 6s ease-in-out transparency 0s infinite;
+}
+
+#your {
+  animation: 6s ease-in-out transparency 1s infinite;
+}
+
+#future {
+  animation: 6s ease-in-out transparency 2s infinite;
+}
+
+.about {
+  display: flex;
+  width: 72%;
+  background-color: whitesmoke;
+  margin: 1rem 0 0 0;
+  padding: 0 0 2rem 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.about div {
+  min-width: calc(36% + 30px);
+  flex: 1;
+  margin: 15px;
+}
+.about h1 {
+  text-decoration: 3px underline cyan;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+.about p {
+  margin: 0;
+  padding: 5px 7% 0 7%;
+  display: block;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  main::before {
+    left: -200px;
+    font-size: 80px;
+  }
+  main .slogan #Slogan {
+    font-size: 4rem;
+  }
+  .about {
+    width: 86%;
+    padding: 0 7% 4rem 7%;
+  }
+  .about div {
+    min-width: calc(50%);
+    margin: 5px;
+  }
+}
